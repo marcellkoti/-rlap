@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-center">Regisztrációs űrlap</h1>
+    <div class="col-6 mx-auto" id="myform">
+        <form action="">
+         <div>
+            <label for="knev"></label>keresztnév:
+            <input type="text" name="knev" id="knev" class="form-control" >
+         </div>
+         <div>
+            <label for="vnev"></label>Vezetéknév:
+            <input type="text" name="vnev" id="vnev" class="form-control" >
+         </div>
+         <div>
+            <label for="p1"></label>jelszó:
+            <input type="text" name="p1" id="p1" class="form-control" >
+         </div>
+         <div>
+            <label for="p2"></label>Jelszó ismétése:
+            <input type="text" name="p2" id="p2" class="form-control" >
+         </div>
+         <div>
+            <label for="mail"></label>E-mail cím:
+            <input type="text" name="mail" id="mail" class="form-control" >
+         </div>
+        </form>
+        <div class="text-center">
+            <button class="btn btn-danger">Törlés</button>
+            <button class="btn btn-success" onclick="teszt()">Küldés</button>
+        </div>
+    </div>
+    <div class="col-6 mx-auto" id="successform">
+        <p id="eredmeny">
+
+        </p>
+    </div>
+
+<script src="js/script.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
